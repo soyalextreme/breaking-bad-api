@@ -40,7 +40,7 @@ function App() {
   }, []);
 
   const fetchApi = async () => {
-    const URI = "/v1/quotes";
+    const URI = "https://breaking-bad-quotes.herokuapp.com/v1/quotes";
     const api = await fetch(URI);
     const result = await api.json();
     setFrase(result[0]);
